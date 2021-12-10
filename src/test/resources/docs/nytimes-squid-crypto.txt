@@ -1,0 +1,53 @@
+Millions of dollars vanished in a matter of minutes after investors piled into a new cryptocurrency inspired by “Squid Game,” the popular Netflix survival series, only to watch its value plunge to nearly zero in a few short hours.
+
+The cryptocurrency, called Squid, began trading early last week at a price of just one penny per token. In the following days, it drew attention from a number of mainstream media outlets. By early Monday, it was trading at $38 a token on a cryptocurrency exchange called Pancakeswap.
+
+Then Squid went on a roller-coaster ride. In a 10-minute span later on Monday, the token’s value grew from $628.33 to $2,856.65, according to CoinMarketCap, a crypto data tracking website. Then, five minutes later, it traded at $0.0007.
+
+More than 40,000 people still held the token after the crash, according to BscScan, a blockchain search engine and analytics platform. One of them was John Lee, 30, of Manila. He said he had spent $1,000 on the Squid tokens, thinking “somewhat instinctively” that the token had been authorized by the Netflix show.
+
+Mr. Lee said he was surprised when he learned that he was not be able to sell the token immediately. He can sell the tokens now, but he’d be left with “almost nothing,” he said.
+
+Sharon Chan, a spokeswoman for Netflix, declined to comment.
+
+The reasons behind Squid’s collapse, reported earlier by Gizmodo, weren’t clear. Neither were the identities of its creators. Its website appeared to have been taken offline. An email sent to its developers bounced back. Its social media channels appeared to have been shut down. Its Twitter account was not accepting direct messages or replies.
+
+You have 4 free articles remaining.
+Subscribe to The Times
+Pancakeswap, the trading platform, did not respond to a request for comment.
+
+In the aftermath, the cryptocurrency world is mulling whether Squid was what Molly Jane Zuckerman, head of content at CoinMarketCap, called a “rug pull,” in which a cryptocurrency’s backers effectively leave the market and take their investors’ funds with them.
+
+“I’m not seeing the developers coming online and saying, ‘Hold with us, so sorry, we’ll figure this out,’ which is what happens when there’s some sort of non-malicious problem,” she said.
+
+Squid’s crash highlights the regulatory gaps over cryptocurrencies, as government agencies and private firms rush to get a grip on the volatile yet increasingly popular investment.
+
+Editors’ Picks
+
+The Platonic Ideal of Macaroni and Cheese
+
+Kristen Stewart’s Princess Diaries
+
+Henry Kissinger and the Puzzle of the Middle East
+Continue reading the main story
+Developers of meme coins like Squid rarely identify themselves, said Yousra Anwar, an editor at CoinMarketCap. If investors suspect financial wrongdoing, they could get passed from country to country, or from regulator to regulator, to investigate.
+
+What to Know About ‘Squid Game’
+Have you heard about this dystopian South Korean drama yet? It was released on Netflix on Sept. 17 and has quickly earned a worldwide audience. Here’s a look at this unique hit:
+
+An Interview With the Show’s Star: Lee Jung-jae discusses the message of the series, possibilities for a Season 2 and why he thinks critics should watch it again.
+Behind the Global Appeal: “Squid Game” taps South Korea’s worries about costly housing and scarce jobs, concerns familiar to its U.S. and international viewers.
+What to Read About the Show: Wondering if you should dive in? We’ve gathered what’s worth reading from the oceans of ink about the show.
+What is Dalgona Candy?: Interest in the South Korean treat has spiked since the show debuted. Here’s why.
+What to Watch Next: Done with “Squid Game” and loved it? Add these six TV shows and movies to your streaming queue.
+Squid came with some unusual features that might have alarmed investors, Ms. Anwar said. The developers required that buyers outnumber sellers two-to-one to allow a sale.
+
+The developers called the sales limit an “anti-dump” mechanism, according to a white paper — the document in which developers describe the features and technical underpinnings of their cryptocurrency — that had once been online. Ms. Anwar said such mechanisms were meant to stem crashes, not prevent holders from selling in the normal course of trading.
+
+The developers also required users to obtain tokens of a second cryptocurrency, called Marbles, to sell their Squid tokens, according to the white paper. Marbles could be earned only by participating in an online game inspired by the show. To participate in the first game, for example, players needed to pay a steep entry fee of 456 Squid tokens. The subsequent levels cost thousands of tokens to enter.
+
+Those features prevented many holders from selling as the value plunged, Ms. Zuckerman said.
+
+The amount of money invested and lost in the tokens is difficult to quantify, she said. But BscScan labeled two crypto addresses as being associated with what it called a “rug pull” of Squid. One of them swapped $3.38 million worth of Squid into a popular crypto called BNB, the BscScan page showed. To complete transactions, both addresses used Tornado Cash, which is a “coin mixer,” or a software company that serves as a middleman between parties and makes it hard to trace transactions, Ms. Zuckerman said.
+
+“Anyone can make up the name of any cryptocurrency,” she said. “You could make up a ‘Mad Men’ token, a ‘Succession’ token. So it’s really important to do your own research.”
