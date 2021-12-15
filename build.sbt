@@ -12,3 +12,9 @@ resolvers in ThisBuild ++= Seq( "Maven Central" at "https://repo1.maven.org/mave
 lazy val root = ( project in file( "." ) ).settings( libraryDependencies ++= chronicleMap
                                                                              ++ betterFiles
                                                                              ++ scalaTest )
+
+publishMavenStyle := true
+
+githubTokenSource := TokenSource.GitConfig( "github.token" ) || TokenSource.Environment( "GITHUB_TOKEN" )
+githubOwner := "reynoldsm88"
+githubRepository := "dedup"
