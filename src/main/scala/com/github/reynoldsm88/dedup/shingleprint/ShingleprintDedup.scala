@@ -9,7 +9,10 @@ import scala.util.hashing.MurmurHash3
  * This algorithm is credited to Dustin Boswell in his blog post 'Real-Time Document DeDuplication'.
  * The original article can be found here: https://medium.com/@dustinboswell/real-time-document-deduplication-d5fb5982812
  */
-class ShingleprintDedup( val maxWords : Int, val threshold : Double, cache : Cache = new MemoryShingleprintCache ) extends Dedup {
+class ShingleprintDedup( val maxWords : Int,
+                         val threshold : Double,
+                         window : Int = 10,
+                         cache : Cache = new MemoryShingleprintCache ) extends Dedup {
 
     override def check( text : String ) : Set[ Duplicate ] = {
         val docShingles = shingleprints( text )
@@ -32,7 +35,7 @@ class ShingleprintDedup( val maxWords : Int, val threshold : Double, cache : Cac
         Set( hashCombine( min1, min2 ), hashCombine( min1, max2 ), hashCombine( max1, min2 ), hashCombine( max1, max2 ) )
     }
 
-    private def minMaxHash( text : String, window : Int = 10 ) : (Int, Int) = {
+    private def minMaxHash( text : String ) : (Int, Int) = {
         val hashes : Seq[ Int ] = text.sliding( window ).map( MurmurHash3.stringHash ).toSeq
         (hashes.min, hashes.max)
     }
