@@ -3,7 +3,7 @@ import sbt._
 
 organization in ThisBuild := "com.github.reynoldsm88"
 name := "dedup"
-version in ThisBuild := "1.0.0-SNAPSHOT"
+version in ThisBuild := "1.0.1-SNAPSHOT"
 
 scalaVersion in ThisBuild := "2.12.7"
 
