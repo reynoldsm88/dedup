@@ -24,7 +24,10 @@ class ShingleprintDedup( val maxWords : Int,
     }
 
     override def update( id : String, text : String ) : Unit = {
-        cache.update( id, shingleprints( text ) )
+        val shingles = shingleprints( text )
+        if ( shingles.nonEmpty ) {
+            cache.update( id, shingles )
+        }
     }
 
     private def shingleprints( text : String ) : Set[ Int ] = {
