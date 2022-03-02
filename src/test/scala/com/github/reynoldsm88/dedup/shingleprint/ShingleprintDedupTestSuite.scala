@@ -93,6 +93,17 @@ class ShingleprintDedupTestSuite extends TestBase {
         results.head.docId shouldBe "nytimes-nasa-moon"
     }
 
+    "Shingleprint Deduplication" should "ignore documents with null text" in {
+        val dedup : Dedup = init()
+        val results = dedup.check( null )
+        results.isEmpty shouldBe true
+    }
+
+    "Shingleprint Deduplication" should "ignore documents with empty text" in {
+        val dedup : Dedup = init()
+        val results = dedup.check( "" )
+        results.isEmpty shouldBe true
+    }
 
     private def init( ) : Dedup = {
         val dedup = new ShingleprintDedup( maxWords = 100, threshold = 0.9 )

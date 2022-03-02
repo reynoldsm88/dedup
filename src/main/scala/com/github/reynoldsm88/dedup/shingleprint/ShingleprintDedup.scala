@@ -16,23 +16,30 @@ class ShingleprintDedup( val maxWords : Int,
 
     override def check( text : String ) : Set[ Duplicate ] = {
         val docShingles = shingleprints( text )
-        val matches = cache.search( docShingles )
-        if ( matches.nonEmpty ) matches.map( m => Duplicate( m, 1.0 ) )
-        else Set()
+        if ( docShingles.nonEmpty ) {
+            val matches = cache.search( docShingles )
+            if ( matches.nonEmpty ) matches.map( m => Duplicate( m, 1.0 ) )
+            else Set()
+        } else Set()
     }
 
     override def update( id : String, text : String ) : Unit = {
-        cache.update( id, shingleprints( text ) )
+        val shingles = shingleprints( text )
+        if ( shingles.nonEmpty ) {
+            cache.update( id, shingles )
+        }
     }
 
     private def shingleprints( text : String ) : Set[ Int ] = {
-        val shingleOne = text.substring( 0, text.length / 2 )
-        val shingleTwo = text.substring( text.length / 2, text.length )
+        if ( text != null && text.nonEmpty ) {
+            val shingleOne = text.substring( 0, text.length / 2 )
+            val shingleTwo = text.substring( text.length / 2, text.length )
 
-        val (min1, max2) = minMaxHash( shingleOne )
-        val (min2, max1) = minMaxHash( shingleTwo )
+            val (min1, max2) = minMaxHash( shingleOne )
+            val (min2, max1) = minMaxHash( shingleTwo )
 
-        Set( hashCombine( min1, min2 ), hashCombine( min1, max2 ), hashCombine( max1, min2 ), hashCombine( max1, max2 ) )
+            Set( hashCombine( min1, min2 ), hashCombine( min1, max2 ), hashCombine( max1, min2 ), hashCombine( max1, max2 ) )
+        } else Set()
     }
 
     private def minMaxHash( text : String ) : (Int, Int) = {
