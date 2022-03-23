@@ -12,7 +12,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-      - name: Build DART commons
+      - name: DART JVM package build
         run: sbt test
 
   publish-to-sonatype:
